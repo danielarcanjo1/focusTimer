@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    gap: 200px;
+}
+
+.container{
+    display: grid;
+    place-content: center;
+    
+    
+}
+h1{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 126.166px;
+    line-height: 148px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #323238;
+
+}
+
+.buttonMoon{
+    
+}
+
+.timeButtons{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.audioButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.buttonPlay, 
+.buttonStop, 
+.buttonPlus, 
+.buttonMinus{
+    background: none;
+    border: none;
+}
+
+.buttonPlay:hover, 
+.buttonStop:hover, 
+.buttonPlus:hover, 
+.buttonMinus:hover{
+    transform: scale(1.2);
+}
+
+.buttonPlay:hover svg path,
+.buttonStop:hover svg path,
+.buttonPlus:hover svg path,
+.buttonMinus:hover svg path{
+    fill: #02799D;
+}
+
+.buttonForest, 
+.buttonRain, 
+.buttonCoffeShop, 
+.buttonFirePlace{
+    width: 138px;
+    height: 152px;
+    background: #E1E1E6;
+    border-radius: 24px;
+    border: none;
+}
+
+.buttonForest:hover, 
+.buttonRain:hover, 
+.buttonCoffeShop:hover, 
+.buttonFirePlace:hover{
+    background: #02799D;
+    fill: white;
+    transform: scale(1.2);
+}
+
